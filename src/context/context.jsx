@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
   const [todo, setTodo] = useState(null);
   
   // Memoize theme styles to prevent unnecessary recalculations
-  const themeStyles = useMemo(() => getThemeStyles(theme === 'dark'), [theme]);
+  const themeStyles = useMemo(() => getThemeStyles(theme), [theme]);
 
   return (
     <AuthContext.Provider value={{ 

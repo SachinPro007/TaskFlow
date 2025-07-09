@@ -67,13 +67,13 @@ function TaskList() {
   return (
     <>
       <div className="flex justify-between items-center mb-6">
-        <h2 className={`text-xl font-semibold ${getThemeStyles.title}`}>
+        <h2 className={`text-xl font-semibold ${getThemeStyles?.title}`}>
           Your Tasks ({filteredTodos.length})
         </h2>
         <button
           onClick={() => refetch()}
           disabled={isFetching}
-          className={`px-3 py-1 text-sm ${getThemeStyles.title} ${getThemeStyles.card} rounded-md transition-colors flex items-center gap-1`}
+          className={`px-3 py-1 text-sm ${getThemeStyles?.title} ${getThemeStyles?.card} rounded-md transition-colors flex items-center gap-1`}
         >
           {isFetching ? (
             <>
