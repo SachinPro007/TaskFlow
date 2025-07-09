@@ -8,6 +8,8 @@ A modern task management application with beautiful UI, real-time updates, and s
 
 ![TaskFlow Screenshot](/public/project.webp)
 
+[Live Link] (https://task-flow-plum-phi.vercel.app/)
+
 ## Features ✨
 
 - **Beautiful Interface**: Clean, modern UI with dark/light mode toggle
@@ -35,4 +37,4 @@ A modern task management application with beautiful UI, real-time updates, and s
 1. Clone the repository:
 ```bash
 git clone https://github.com/SachinPro007/TaskFlow.git
-cd taskflow-pro
+cd TaskFlow
