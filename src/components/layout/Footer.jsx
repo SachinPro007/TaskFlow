@@ -90,7 +90,7 @@ function Footer() {
         >
           © {new Date().getFullYear()} TaskFlow • Crafted with ❤️ by{" "}
           <a href="https://www.linkedin.com/in/sachinpro/">
-            <span className="text-red-500 hover:text-red-600 hover:underline">Sachin...</span>
+            <span className="text-blue-500 hover:text-blue-600 hover:underline">Sachin...</span>
           </a>
         </div>
       </div>

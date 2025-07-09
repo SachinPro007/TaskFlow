@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { getApiData } from "../api/apiData";
 import { TaskListCard, Loader, ErrorComponent } from "./index";
+import { getContext } from "../context/context";
 
 function TaskList() {
+  const {getThemeStyles} = getContext()
   const { 
     data, 
     isLoading, 
@@ -65,13 +67,13 @@ function TaskList() {
   return (
     <>
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+        <h2 className={`text-xl font-semibold ${getThemeStyles.title}`}>
           Your Tasks ({filteredTodos.length})
         </h2>
         <button
           onClick={() => refetch()}
           disabled={isFetching}
-          className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md transition-colors flex items-center gap-1"
+          className={`px-3 py-1 text-sm ${getThemeStyles.title} ${getThemeStyles.card} rounded-md transition-colors flex items-center gap-1`}
         >
           {isFetching ? (
             <>
