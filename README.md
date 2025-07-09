@@ -6,7 +6,7 @@
 
 A modern task management application with beautiful UI, real-time updates, and seamless dark/light mode.
 
-![TaskFlow Screenshot](/project.webp)
+![TaskFlow Screenshot](/public/project.webp)
 
 ## Features ✨
 
